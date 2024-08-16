@@ -1,0 +1,25 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+html {
+  font-family: "Roboto", "Courier New", Courier, monospace;
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  cursor: none;
+  background-color: rgb(99, 89, 89);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-cursor {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: -100px orangered;
+  background-color: orangered;
+  border-radius: 50%;
+  pointer-events: none;
+  /* Makes sure the cursor doesn't interfere with other elements */
+  transform: translate(-50%, -50%);
+}
